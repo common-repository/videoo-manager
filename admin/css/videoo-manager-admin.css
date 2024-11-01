@@ -1,0 +1,528 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.wrap.videoo-manager {
+  font-weight: 500;
+  overflow-y: scroll;
+  border-bottom-left-radius: 24px;
+  border-top-right-radius: 32px;
+}
+
+.wrap.videoo-manager h1 {
+  color: #3a3a3a;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 8px;
+}
+
+.wrap.videoo-manager h2,
+.wrap.videoo-manager h3 {
+  color: #6046f0;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: normal;
+}
+
+.wrap.videoo-manager p {
+  color: #3a3a3a;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 90%;
+  margin: auto;
+}
+
+.wrap.videoo-manager .notice > p {
+  color: unset;
+  font-size: unset;
+  font-weight: unset;
+  width: unset;
+  margin: 0.5em 0;
+}
+
+.wrap.videoo-manager form {
+  background-color: rgba(223,218,252,0.3);
+  border-radius: 16px;
+  padding: 8px 24px 32px 24px;
+  /* width: 50%; */
+  box-shadow: 0px 0px 24px -8px #6134ed;
+  /* margin-bottom: 72px; */
+  height: fit-content;
+  margin: 16px;
+}
+
+/********************** Form elements **********************/
+
+.wrap.videoo-manager input[type="text"],
+.wrap.videoo-manager input[type="number"],
+.wrap.videoo-manager select,
+.wrap.videoo-manager textarea,
+.button.button-primary {
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+}
+
+.wrap.videoo-manager select {
+  /* margin-bottom: 4px; */
+}
+
+.wrap.videoo-manager .fieldset_input_radio_button {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.wrap.videoo-manager input[type="radio"] {
+  margin-left: 16px;
+}
+
+.wrap.videoo-manager textarea {
+  height: 16rem;
+  padding: 8px;
+  width: 100%;
+}
+
+/********************** Save settings button **********************/
+
+.wrap.videoo-manager form .div_btn_save {
+  text-align: center;
+  margin: 16px 8px 8px 8px;
+}
+
+.ads_txt button.button-primary {
+  background: #6046f0;
+  font-size: 1rem;
+  border: none;
+  transition: all .3s ease;
+}
+
+.ads_txt button.button-primary:hover,
+.ads_txt button.button-primary:focus {
+  background: #b641f9;
+  font-weight: bold;
+}
+.ads_txt .action-buttons {
+  display: flex;
+}
+.ads_txt button.button-primary.wide-button {
+  width: 100%;
+}
+
+.ads_txt button.button-primary.half-button {
+  flex: 50%;
+}
+.ads_txt button.button-primary.half-button:first-child {
+  margin-right: 8px;
+}
+
+.ads_txt button.button-primary.third-button {
+  flex: calc(100% / 3);
+}
+.ads_txt button.button-primary.third-button:nth-child(2) {
+  margin: 0 8px;
+}
+
+.ads_txt .groupform .action-buttons button.button-primary.delete-selected-group-lines {
+  margin-right: 8px;
+}
+
+.ads_txt .groupform .action-buttons button.button-primary.delete-selected-group-lines,
+.ads_txt .groupform .action-buttons button.button-primary.update-selected-group-lines {
+  flex: 45%
+}
+
+
+.ads_txt .groupform .action-buttons input#group-line-check-all {
+  margin-right: 4px;
+  align-self: center;
+}
+
+#save-videoo_config-settings,
+#save-ads-txt-settings {
+  width: 95%;
+}
+
+.ads_txt button > span.dashicons {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+
+/********************** Config **********************/
+
+.wrap.videoo-manager.config {
+	display: flex;
+	justify-content: left;
+}
+
+.wrap.videoo-manager.config .preview {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	word-break: break-word;
+}
+
+.wrap.videoo-manager.config .preview h3 {
+	margin: 0px;
+}
+
+.wrap.videoo-manager.config .preview .container {
+	width: 100%;
+	background-color: gray;
+	position: relative; /* If you want text inside of it */
+	padding-top: 56.25%;
+}
+
+.wrap.videoo-manager.config .preview .screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin-top: -20px;
+}
+
+.wrap.videoo-manager.ads_txt form .form-table {
+  width: 95%;
+  margin: auto;
+}
+
+.wrap.videoo-manager.config form { width: 60%; margin: 15px;}
+
+.wrap.videoo-manager.config input[type="text"],
+.wrap.videoo-manager.config input[type="number"] {
+  width: 100%;
+}
+
+
+.wrap.videoo-manager.config .modal,
+.wrap.videoo-manager.config .modal .modal-content{
+	margin: 0px auto;
+}
+
+#modal-yes, #modal-no {
+	cursor: pointer;
+}
+
+/********************** ADS **********************/
+
+.wrap.videoo-manager.ads_txt {
+  display: flex;
+  justify-content: center;
+}
+
+.wrap.videoo-manager.ads_txt.disabled {
+	display: block;
+	justify-content: center;
+}
+
+
+.wrap.videoo-manager.ads_txt input[type="text"] {
+  width: 85%;
+}
+
+.wrap.videoo-manager.ads_txt input:not(.validate) {
+  transition: all .5s ease;
+}
+.wrap.videoo-manager.ads_txt input.validate {
+  border: 1px solid #d63638;
+  box-shadow: 0 0 8px -2px #d63638;
+}
+.wrap.videoo-manager.ads_txt form .form-table .ads-txt-lines {
+  height: 500px;
+  overflow-y: scroll;
+  padding: 8px;
+  box-shadow: 0 0 16px -8px #6046f0;
+  border-radius: 8px 0 0 8px;
+  transition: box-shadow 0.4s ease;
+  border: 2px solid rgba(223,218,252,0.3);
+}
+.wrap.videoo-manager.ads_txt form .form-table .ads-txt-lines:hover {
+  box-shadow: 0 0 24px -8px #6046f0;
+  border-radius: 8px 0 0 8px;
+}
+
+/* Scrollbar styles */
+/* Firefox */
+.wrap.videoo-manager.ads_txt form .form-table .ads-txt-lines {
+  scrollbar-color: transparent #6046f0;
+  scrollbar-width: thin;
+}
+/* Webkit and Blink*/
+.wrap.videoo-manager.ads_txt form .form-table .ads-txt-lines::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+.wrap.videoo-manager.ads_txt form .form-table .ads-txt-lines::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #6046f0;
+}
+/* END Scrollbar Styles */
+
+.wrap.videoo-manager.ads_txt form .form-table tr td div {
+  /* text-align: center; */
+}
+
+.wrap.videoo-manager.ads_txt form .form-table tr td div div {
+  margin: 0px auto;
+  white-space: nowrap;
+}
+
+.wrap.videoo-manager form .form-table th {
+  display: none;
+}
+
+/********************** ADS line buttons **********************/
+
+.wrap.videoo-manager.ads_txt .ads-txt-lines input[type="text"] {
+  transition: box-shadow 0.2s ease;
+}
+.wrap.videoo-manager.ads_txt .ads-txt-lines input[type="text"]:hover {
+  box-shadow: 0px 0px 8px 0px #6046f0;
+}
+
+.wrap.videoo-manager.ads_txt form .form-table tbody tr td div div input {
+  display: inline;
+  font-family: mono;
+}
+
+.wrap.videoo-manager.ads_txt form .form-table tbody tr td div div .line-btn {
+  border: none;
+  background-color: transparent;
+  height: 4rem;
+  margin-left: 8px;
+}
+
+.wrap.videoo-manager.ads_txt form .form-table tbody tr td div div .line-btn span {
+  color: #6046f0;
+  transition: transform 0.25s ease;
+  transform: scale(1.5);
+}
+
+.wrap.videoo-manager.ads_txt form .form-table tbody tr td div div .line-btn span:hover {
+  color: #b641f9;
+  transform: scale(1.75);
+  cursor: pointer;
+}
+
+/**********************  The Modal (background) **********************/
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/********************** Modal Content **********************/
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 16px;
+}
+
+.modal-content p {
+  white-space: normal;
+}
+
+/********************** The Close Button Modal **********************/
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/********************** Yes/No Button Modal **********************/
+
+#modal-yes, #modal-no {
+  background-color: #6046f0;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+#modal-yes:hover, #modal-no:hover {
+  background-color: #b641f9;
+  transition-duration: 0.3s;
+}
+
+/******************************************** Media queries ********************************************/
+
+/********************** Tablet grande **********************/
+
+@media (max-width: 1280px) and (min-width: 961px) {
+  .wrap.videoo-manager form {
+    width: 75%;
+  }
+}
+
+/********************** Tablet pequeña y moviles **********************/
+
+@media (max-width: 960px) and (min-width: 783px) {
+  .wrap.videoo-manager form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 782px) {
+  .wrap.videoo-manager form {
+    width: 90%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .wrap.videoo-manager form .form-table tbody tr td div div .line-btn {
+    margin-left: 1px;
+  }
+  .wrap.videoo-manager.ads_txt input[type="text"] {
+    width: 80%;
+  }
+
+	.wrap.videoo-manager.config {
+		display: block;
+		width: 100%;
+	}
+
+	.wrap.videoo-manager.config form {
+		width: 80%;
+	}
+
+	.wrap.videoo-manager.config .preview {
+		display: block;
+		width: 100%;
+	}
+
+}
+
+/********************** Movil pequeño **********************/
+
+@media (max-width: 430px) {
+  .wrap.videoo-manager.ads_txt input[type="text"] {
+    width: 70%;
+  }
+}
+
+/********************** Groups and group cards **********************/
+.wrap.videoo-manager.ads_txt .groups .groups-container{
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  word-break: break-word;
+  height: calc(100vh - 360px);
+  overflow-y: scroll;
+}
+/* Scrollbar styles */
+/* Firefox */
+.wrap.videoo-manager.ads_txt form .groupform .group-lines,
+.wrap.videoo-manager.ads_txt .groups .groups-container {
+  scrollbar-color: transparent #6046f0;
+  scrollbar-width: thin;
+}
+/* Webkit and Blink*/
+.wrap.videoo-manager.ads_txt form .groupform .group-lines::-webkit-scrollbar,
+.wrap.videoo-manager.ads_txt .groups .groups-container::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+.wrap.videoo-manager.ads_txt form .groupform .group-lines::-webkit-scrollbar-thumb,
+.wrap.videoo-manager.ads_txt .groups .groups-container::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #6046f0;
+}
+/* END Scrollbar Styles */
+.groups > .groups-container {
+  border-bottom: 2px solid #b641f9;
+}
+.groups > .groups-container > .group-card {
+  padding: 8px 16px;
+  margin: 4px 8px 0;
+  transition: all .3s ease;
+}
+.groups > .groups-container > .group-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 16px -8px #6046f0;
+  border-radius: 8px 0 0 8px;
+}
+.groups > .groups-container > .group-card h3 {
+  font-style: italic;
+}
+.wrap.videoo-manager.ads_txt form {
+}
+.wrap.videoo-manager.ads_txt form h2 + p {
+  display: none;
+}
+.wrap.videoo-manager.ads_txt form .groupform .group-lines {
+ max-height: 500px;
+ overflow-y: scroll;
+ margin-bottom: 16px;
+}
+.wrap.videoo-manager.ads_txt form .groupform .group-lines .group-line-fieldset.repeated input,
+.wrap.videoo-manager.ads_txt form .groupform .group-lines .group-line-fieldset.repeated input::placeholder {
+  background-color: #fff9e9;
+  color: #dba617;
+}
+.wrap.videoo-manager.ads_txt form .groupform .action-buttons {
+  margin-bottom: 16px;
+}
+.wrap.videoo-manager.ads_txt form .groupform fieldset {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.wrap.videoo-manager.ads_txt form .groupform fieldset.newline {
+  padding-right: 4px;
+}
+
+.wrap.videoo-manager.ads_txt form .groupform fieldset button.add-new-group-line {
+  height: 32px;
+  width: 32px;
+  background: #b641f9;
+  border: none;
+  border-radius: 2px;
+  transition: all .3s ease;
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+.wrap.videoo-manager.ads_txt form .groupform fieldset input[type=text].group-line-type {
+  width: 100px;
+}
+.wrap.videoo-manager.ads_txt form .groupform fieldset button.add-new-group-line:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8px 0px #6046f0;
+}
+.wrap.videoo-manager.ads_txt form .groupform fieldset button.add-new-group-line::before {
+  color: white;
+}
+
+.wrap.videoo-manager.ads_txt form .groupform fieldset button.add-new-group-line:disabled,
+.wrap.videoo-manager.ads_txt form .groupform fieldset button.add-new-group-line[disabled]{
+	color: #a7aaad!important;
+	background: #f6f7f7!important;
+	border-color: #dcdcde!important;
+	box-shadow: none!important;
+	text-shadow: none!important;
+	cursor: default;
+}
+
